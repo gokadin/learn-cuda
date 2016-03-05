@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern void square(float *a, int N);
+extern "C" {
+  void square(float *a, int N);
+}
 
 int main(void) {
   float *a_h;

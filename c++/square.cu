@@ -7,6 +7,8 @@ __global__ void square_cuda(float *a, int N) {
   if (idx<N) a[idx] = a[idx] * a[idx];
 }
 
+extern "C" {
+
 void square(float *a, int N) {
   float* a_d;
   size_t size = N * sizeof(float);
@@ -21,3 +23,4 @@ void square(float *a, int N) {
   cudaFree(a_d);
 }
 
+}
