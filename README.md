@@ -1,6 +1,8 @@
 # Programming CUDA Using Go
 
-This example demonstrates that we can programming CUDA using Go.
+This example demonstrates that we can programming CUDA using Go.  It
+works with Amazon AWS GPU instances (64-bit AMD x64 system) and Nvidia
+Jetson TK1 development board (32-bit ARM7l system).
 
 The `cgo` tool in Go's toolchain enables calling C programs from Go
 programs.  However, `cgo` assumes that the C/C++ compiler accepts
